@@ -1,0 +1,10 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "c:\\Users\\Tom\\Desktop\\Visual_Studio_C",
+            "binaryPath": "c:\\Users\\Tom\\Desktop\\Visual_Studio_C\\test",
+            "binaryArgs": []
+        }
+    ]
+}
