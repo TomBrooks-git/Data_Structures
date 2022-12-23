@@ -93,35 +93,20 @@ void showList(LinkedList* L_)
 
 void destroyList(LinkedList* L_)
 {
-    if(L_ == NULL)
-    {
-        printf("List does not exist!\n");
-        return;
-    }
-    
     if(L_->head == NULL)
     {
-        printf("Requested list is already empty!\n");
-        free(L_);
-        L_ = NULL;
+        printf("\n");
         return;
     }
-    
-    Node* currNode = L_->head;
-    Node* nextNode = currNode->next;
 
-    while(nextNode != NULL)
+    int i;
+    for(i = 0; i < L_->count; i++)
     {
-        nextNode = currNode->next;
-        destroyNode(currNode);
-        currNode = nextNode;
+        removeFromEnd(L_);
     }
-
-    free(L_->head);
+    
     free(L_);
-    L_ = NULL;
-    return;
-   
+
     printf("List Succesfully Destroyed\n");
 
 

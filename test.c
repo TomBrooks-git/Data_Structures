@@ -9,17 +9,21 @@ int main()
     addToList(List, 1);
     addToList(List, 2);
     addToList(List, 3);
-    removeFromEnd(List);
-    removeFromEnd(List);
-    removeFromEnd(List);
-    removeFromEnd(List);
+    addToList(List, 4);
+    addToList(List, 5);
+    // removeFromEnd(List);
+    // removeFromEnd(List);
+    // removeFromEnd(List);
+    // removeFromEnd(List);
+    // removeFromEnd(List);
+    // removeFromEnd(List);
     
     
     showList(List);
 
     //printf("Getting Here 1\n");
 
-    //destroyList(List);
+    destroyList(List);
 
     printf("Test concluded succesfully, go to sleep\n");
 
